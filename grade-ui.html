@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>
+        Grading System
+    </title>
+</head>
+
+<body>
+    <h1>Student Details</h1>
+    <form action="grade-process.php" method="post" id="studentForm">
+
+        Student Number: <input type="text" name="studentnumber"><br>
+        Last Name: <input type="text" name="lastname"><br> 
+        First Name: <input type="text" name="firstname"><br> 
+        Middle Initial: <input type="text" name="middleinitial"><br>
+
+        <label for="course"> Course </label>
+        <select id="course" name="course">
+            <option value="">--None--</option>
+            <option value="BSIT">BSIT</option>
+            <option value="BSCS">BSCS</option>
+            <option value="BSIS">BSIS</option>
+         </select>
+        <br>
+
+        <label>Gender</label> <br>
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for="Male">Male</label><br>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Femail">Female</label><br>
+
+        <h1>Grade Details</h1>
+        Quiz 1 (50/50) <input type="text" name="q1"><br> 
+        Quiz 2 (50/50) <input type="text" name="q2"><br> 
+        Assignment (20/20) <input type="text" name="ass"><br> 
+        Major Exam (100/100) <input type="text" name="exam"><br> 
+        Compute Grade<button onclick="document.getElementById('student_form').reset();">Clear Fields</button>
+
+    </form>
+</body>
+</html>
